@@ -1,0 +1,57 @@
+
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px; /* เพิ่มพื้นที่ระหว่างกล่อง */
+}
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.fa-heart {
+    color: grey; /* ก่อนคลิก */
+    cursor: pointer;
+}
+
+.fa-heart.favorite-active {
+    color: red; /* หลัง */
+}
+
+.image {
+    width: 100%;   /*ปรับขนาดรูปให้เท่ากัน*/
+    height: auto;
+    display: block;
+}
+
+.w3-row-padding {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* เพิ่มพื้นที่ระหว่างกล่อง */
+}
+
+.w3-col {
+    flex: 1 1 calc(20% - 20px); /* ปรับสัดส่วนให้เหมาะสม  */
+    box-sizing: border-box;
+}
+
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+

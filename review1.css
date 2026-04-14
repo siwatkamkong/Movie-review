@@ -1,0 +1,14 @@
+.review-title {      /*ชื่อเรื่อง*/
+    font-size: 1.5em;
+    color: #333;
+}
+
+.review-content { /*เนื้อหา*/
+    font-size: 1em;
+    color: #666;
+}
+
+.review-rating {      /*คะเเนนสี*/
+    font-weight: bold;
+    color: #fc0000; 
+}
